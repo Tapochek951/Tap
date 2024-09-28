@@ -13,10 +13,11 @@ public class TestForm {
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Huesos");
         $("#lastName").setValue("Pidor");
-        $("#userEmail").setValue("huesos@gmail.com");
         $("#userNumber").setValue("1234567890");
+        $("#userEmail").setValue("huesos@gmail.com");
         $("#subjectsInput").setValue("Physics").pressEnter();
         $("#currentAddress").setValue("basileevka");
+        $("#uploadPicture").uploadFromClasspath("picure.jpg");
         $("#submit").click();
 
     }
