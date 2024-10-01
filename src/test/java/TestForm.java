@@ -31,9 +31,12 @@ public class TestForm {
         $(".react-datepicker__day--021").click();
         $("#subjectsInput").setValue("Physics").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#currentAddress").setValue("basileevka");
         $("#uploadPicture").uploadFromClasspath("picure.jpg");
-
+        $("#currentAddress").setValue("basileevka");
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("Haryana")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Karnal")).click();
         $("#submit").click();
 
     }
