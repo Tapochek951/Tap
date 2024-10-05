@@ -27,7 +27,7 @@ public class IshemReposit {
         open("https://github.com");
         $("[placeholder='Search or jump to...']").click();
         $("#query-builder-test").setValue("selenide").pressEnter();
-        $$("ul.repo-list li").first().$("a").click();
+        $$("[data-testid=\"results-list\"] div h3 a ").first().click();
 
         sleep(5000);
 
