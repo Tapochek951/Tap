@@ -28,6 +28,10 @@ public class IshemReposit {
         $("[placeholder='Search or jump to...']").click();
         $("#query-builder-test").setValue("selenide").pressEnter();
         $$("[data-testid=\"results-list\"] div h3 a ").first().click();
+        $("#wiki-tab").click();
+        $("#wiki-content").$(byText("Soft assertions")).click();
+        $(".page").shouldHave(text("Using JUnit5 extend test class:"));
+
 
         sleep(5000);
 
