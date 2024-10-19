@@ -1,6 +1,7 @@
+package test;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -22,7 +23,7 @@ public class TestForm {
         open("/automation-practice-form");
         $("#firstName").setValue("Tapok");
         $("#lastName").setValue("Worker");
-        $("#gender-radio-1").parent().click();
+        $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue("1234567890");
         $("#userEmail").setValue("tapochek@gmail.com");
         $("#dateOfBirthInput").click();
@@ -31,7 +32,7 @@ public class TestForm {
         $(".react-datepicker__day--021").click();
         $("#subjectsInput").setValue("Physics").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#uploadPicture").uploadFromClasspath("picure.jpg");
+        $("#uploadPicture").uploadFromClasspath("1.png");
         $("#currentAddress").setValue("basileevka");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("Haryana")).click();
