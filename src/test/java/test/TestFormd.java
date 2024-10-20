@@ -35,7 +35,9 @@ public class TestFormd {
                         .setCurrentAddress("basileevka")
                         .setState("Haryana")
                         .setCity("Karnal")
+                        .setUploadPicture()
                         .setSubmit("");
+
 
 
 

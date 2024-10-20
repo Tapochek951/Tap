@@ -3,6 +3,9 @@ package Pages;
 import Pages.comp.CalendarComponent;
 import com.codeborne.selenide.SelenideElement;
 
+import java.io.File;
+
+import static com.codeborne.selenide.Condition.image;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -31,7 +34,11 @@ public class RegistrationPage {
 
             selectCity = $("#react-select-4-input"),
 
+            uploadPictureSelector = $("#uploadPicture"),
+
             selectSubmit = $("#submit");
+
+
 
     CalendarComponent calendarComponent = new CalendarComponent();
 
@@ -114,10 +121,16 @@ public class RegistrationPage {
         return this;
     }
 
+    public RegistrationPage setUploadPicture() {
+        uploadPictureSelector.uploadFile(new File("src/test/java/rec/icon.png"));
+        return this;
+    }
+
     public RegistrationPage setSubmit(String value) {
         selectSubmit.click();
 
         return this;
     }
+
 
 }
