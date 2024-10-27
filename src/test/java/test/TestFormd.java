@@ -37,10 +37,6 @@ public class TestFormd {
                         .setCity("Karnal")
                         .setUploadPicture()
                         .setSubmit("");
-
-
-
-
-        //$("#uploadPicture").uploadFromClasspath("picure.jpg");
+        
     }
 }
