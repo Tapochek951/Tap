@@ -5,38 +5,37 @@ import com.codeborne.selenide.SelenideElement;
 
 import java.io.File;
 
-import static com.codeborne.selenide.Condition.image;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
 
-    private SelenideElement firstNameInput = $("#firstName"),
+    private final SelenideElement firstNameInput = $("#firstName");
 
-            lastNameInput = $("#lastName"),
+    private final SelenideElement lastNameInput = $("#lastName");
 
-            userEmailInput = $("#userEmail"),
+    private SelenideElement userEmailInput = $("#userEmail");
 
-            genderWrapper = $("#genterWrapper"),
+    private SelenideElement genderWrapper = $("#genterWrapper");
 
-            userNumberInput = $("#userNumber"),
+    private SelenideElement userNumberInput = $("#userNumber");
 
-            calendarInput = $("#dateOfBirthInput"),
+    private SelenideElement calendarInput = $("#dateOfBirthInput");
 
-            subjectsInput = $("#subjectsInput"),
+    private SelenideElement subjectsInput = $("#subjectsInput");
 
-            hobbiesWrapper = $("#hobbiesWrapper"),
+    private SelenideElement hobbiesWrapper = $("#hobbiesWrapper");
 
-            currentAddress = $("#currentAddress"),
+    private SelenideElement currentAddress = $("#currentAddress");
 
-            selectState = $("#react-select-3-input"),
+    private SelenideElement selectState = $("#react-select-3-input");
 
-            selectCity = $("#react-select-4-input"),
+    private SelenideElement selectCity = $("#react-select-4-input");
 
-            uploadPictureSelector = $("#uploadPicture"),
+    private SelenideElement uploadPictureSelector = $("#uploadPicture");
 
-            selectSubmit = $("#submit");
+    private SelenideElement selectSubmit = $("#submit");
 
 
 

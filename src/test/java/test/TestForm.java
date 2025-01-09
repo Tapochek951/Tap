@@ -8,8 +8,8 @@ import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class TestForm {
 
@@ -48,5 +48,8 @@ public class TestForm {
         $("#stateCity-wrapper").$(byText("Karnal")).click();
         $("#submit").click();
 
+    }
+
+    private void executeJavaScript(String s) {
     }
 }
